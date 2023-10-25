@@ -1,0 +1,10 @@
+[tool.poetry]
+name = 'slack-chatgpt'
+version = '0.0.1'
+description = 'Slackでメンションした時にChatGPTを呼び出す。ツリーに対して投稿された場合、過去の履歴を拾って会話する。'
+authors = ['itto']
+
+[tool.poetry.dependencies]
+python='>=3.10,<3.11'
+openai = '*'
+slack_bolt = '*'

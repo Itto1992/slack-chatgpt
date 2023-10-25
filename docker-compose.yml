@@ -1,0 +1,14 @@
+version: "3"
+services:
+  dev:
+    build:
+      context: .
+    command: python app/main.py
+    image: slack-chatgpt
+    shm_size: 8g
+    volumes:
+      - .:/root/workspace
+    working_dir: /root/workspace
+    env_file:
+      - .env
+    tty: true
